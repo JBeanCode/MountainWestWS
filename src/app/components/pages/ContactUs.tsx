@@ -9,11 +9,18 @@ export function ContactUs() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const subject = encodeURIComponent(`Website Contact from ${formData.name}`);
+  const body = encodeURIComponent(
+    `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || "Not provided"}\n\nMessage:\n${formData.message}`
+  );
+
+  window.location.href = `mailto:josh@mountainwestwebstudio.com?subject=${subject}&body=${body}`;
+
+  setFormData({ name: "", email: "", phone: "", message: "" });
+};
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -51,10 +58,10 @@ export function ContactUs() {
                   <div>
                     <h3 className="text-[rgb(39,89,83)] mb-1 text-sm sm:text-base">Email</h3>
                     <a
-                      href="mailto:info@mountainwestwebstudio.com"
+                      href="mailto:josh@mountainwestwebstudio.com"
                       className="text-gray-700 hover:text-[rgb(39,89,83)] transition-colors text-sm sm:text-base break-all"
                     >
-                      info@mountainwestwebstudio.com
+                      josh@mountainwestwebstudio.com
                     </a>
                   </div>
                 </div>
