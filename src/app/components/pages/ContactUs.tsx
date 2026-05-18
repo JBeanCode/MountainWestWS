@@ -45,7 +45,7 @@ const handleSubmit = (e: React.FormEvent) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 sm:p-8 shadow-lg">
               <h2 className="text-2xl sm:text-3xl text-[rgb(39,89,83)] mb-4 sm:mb-6">Get In Touch</h2>
-              <p className="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base">
+              <p className="text-700 text-[rgb(39,89,83)] mb-6 sm:mb-8 text-sm sm:text-base">
                 Have a project in mind? We'd love to hear from you. Send us a message
                 and we'll respond as soon as possible.
               </p>
@@ -59,7 +59,7 @@ const handleSubmit = (e: React.FormEvent) => {
                     <h3 className="text-[rgb(39,89,83)] mb-1 text-sm sm:text-base">Email</h3>
                     <a
                       href="mailto:josh@mountainwestwebstudio.com"
-                      className="text-gray-700 hover:text-[rgb(39,89,83)] transition-colors text-sm sm:text-base break-all"
+                      className="text-700 text-[rgb(39,89,83)] hover:text-black transition-colors text-sm sm:text-base break-all"
                     >
                       josh@mountainwestwebstudio.com
                     </a>
@@ -72,7 +72,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   </div>
                   <div>
                     <h3 className="text-[rgb(39,89,83)] mb-1 text-sm sm:text-base">Location</h3>
-                    <p className="text-gray-700 text-sm sm:text-base">Boulder, CO - USA</p>
+                    <p className="text-700 text-[rgb(39,89,83)] text-sm sm:text-base">Boulder, CO - USA</p>
                   </div>
                 </div>
               </div>

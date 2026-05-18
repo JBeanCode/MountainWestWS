@@ -25,7 +25,7 @@ export function Services() {
   ];
 
   return (
-    <div className="pt-16 sm:pt-20 min-h-screen">
+    <div className="pt-16 sm:pt-20 min-h-screen ">
       <section className="py-12 sm:py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -43,7 +43,7 @@ export function Services() {
               >
                 <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[rgb(39,89,83)] mb-3 sm:mb-4" />
                 <h3 className="text-xl sm:text-2xl text-[rgb(39,89,83)] mb-2 sm:mb-3">{service.title}</h3>
-                <p className="text-gray-700 text-sm sm:text-base">{service.description}</p>
+                <p className="text-[rgb(39,89,83)] text-700 text-sm sm:text-base">{service.description}</p>
               </div>
             ))}
           </div>

@@ -42,7 +42,7 @@ export function OurWork() {
             <h1 className="text-3xl sm:text-5xl md:text-6xl text-[rgb(39,89,83)] mb-4 sm:mb-6">
               Our Work
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4">
+            <p className="text-lg sm:text-xl text-[rgb(39,89,83)] text-700 max-w-3xl mx-auto px-4">
               Take a look at some of the projects we've built for businesses across the Mountain West region
             </p>
           </div>
@@ -62,7 +62,7 @@ export function OurWork() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl text-[rgb(39,89,83)] mb-3">{project.title}</h3>
-                  <p className="text-gray-700 mb-4">{project.description}</p>
+                  <p className="text-[rgb(39,89,83)] text-700 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span
