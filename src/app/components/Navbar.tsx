@@ -95,28 +95,28 @@ export function Navbar() {
             <div className="px-4 py-6 space-y-3">
               <Link
                 to="/services"
-                className="block text-[rgb(39,89,83)] text-center border-2 border-[rgb(39,89,83)] px-4 py-3 rounded-full hover:bg-[rgb(39,89,83)] hover:text-white transition-all duration-200"
+                className="block text-white text-center border-2 border-white px-4 py-3 rounded-full hover:bg-white hover:text-[rgb(39,89,83)] transition-all duration-200"
                 onClick={closeMenu}
               >
                 Services
               </Link>
               <Link
                 to="/about-us"
-                className="block text-[rgb(39,89,83)] text-center border-2 border-[rgb(39,89,83)] px-4 py-3 rounded-full hover:bg-[rgb(39,89,83)] hover:text-white transition-all duration-200"
+                className="block text-white text-center border-2 border-white px-4 py-3 rounded-full hover:bg-white hover:text-[rgb(39,89,83)] transition-all duration-200"
                 onClick={closeMenu}
               >
                 About Us
               </Link>
               <Link
                 to="/our-work"
-                className="block text-[rgb(39,89,83)] text-center border-2 border-[rgb(39,89,83)] px-4 py-3 rounded-full hover:bg-[rgb(39,89,83)] hover:text-white transition-all duration-200"
+                className="block text-white text-center border-2 border-white px-4 py-3 rounded-full hover:bg-white hover:text-[rgb(39,89,83)] transition-all duration-200"
                 onClick={closeMenu}
               >
                 Our Work
               </Link>
               <Link
                 to="/contact-us"
-                className="block text-[rgb(39,89,83)] text-center border-2 border-[rgb(39,89,83)] px-4 py-3 rounded-full hover:bg-[rgb(39,89,83)] hover:text-white transition-all duration-200"
+                className="block text-white text-center border-2 border-white px-4 py-3 rounded-full hover:bg-white hover:text-[rgb(39,89,83)] transition-all duration-200"
                 onClick={closeMenu}
               >
                 Contact Us
