@@ -1,17 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mountain West</title>
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      <script type="module" crossorigin src="/assets/index-2w3G53Mv.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-CyS3vQRB.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mountain West</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
 
-    <body>
-      <div id="root"></div>
-    </body>
-  </html>
-  
+    #root {
+      height: 100%;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-2w3G53Mv.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CyS3vQRB.css">
+</head>
+
+<body>
+  <!-- added form here to allow netlify to capture form submissions without needing to add a backend route for it -->
+  <form name="contact" method="POST" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+  </form>
+  <div id="root"></div>
+</body>
+
+</html>
