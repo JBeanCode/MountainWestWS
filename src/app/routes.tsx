@@ -7,6 +7,7 @@ import { OurWork } from "./components/pages/OurWork";
 import { FAQs } from "./components/pages/FAQs";
 import { ContactUs } from "./components/pages/ContactUs";
 import { GuildUp } from "./components/pages/GuildUp";
+import ThankYou from "./components/pages/ThankYou";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "faqs", Component: FAQs },
       { path: "contact-us", Component: ContactUs },
       { path: "projects/guildup", Component: GuildUp },
+      { path: "thank-you", Component: ThankYou },
     ],
   },
 ]);
