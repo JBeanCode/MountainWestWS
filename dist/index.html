@@ -16,11 +16,16 @@
       height: 100%;
     }
   </style>
-  <script type="module" crossorigin src="/assets/index-2w3G53Mv.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CyS3vQRB.css">
+  <script type="module" crossorigin src="/assets/index-2COURLX6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C4tFLovo.css">
 </head>
 
 <body>
+  <!-- added form here to allow netlify to capture form submissions without needing to add a backend route for it -->
+  <form name="contact" method="POST" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+  </form>
   <div id="root"></div>
 </body>
+
 </html>
