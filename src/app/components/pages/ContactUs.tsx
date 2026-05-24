@@ -9,35 +9,24 @@ export function ContactUs() {
     message: "",
   });
 
-  const handleSubmit = async (
-    e: React.FormEvent<HTMLFormElement>
-  ) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    const form = e.currentTarget;
-    const netlifyFormData = new FormData(form);
-
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: {
-          "Content-Type":
-            "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(
-          Array.from(
-            netlifyFormData.entries()
-          ) as [string, string][]
-        ).toString(),
-      });
-
-      if (response.ok) {
-        window.location.href = "/thank-you";
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
+    const response = await fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        "form-name": "contact",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      }).toString(),
+    });
+    if (response.ok) {
+      window.location.href = "/thank-you";
+    } else {
       alert("Something went wrong. Please try again.");
     }
   };

@@ -8,7 +8,6 @@ import { FAQs } from "./components/pages/FAQs";
 import { ContactUs } from "./components/pages/ContactUs";
 import { GuildUp } from "./components/pages/GuildUp";
 import ThankYou from "./components/pages/ThankYou";
-
 export const router = createBrowserRouter([
   {
     path: "/",
